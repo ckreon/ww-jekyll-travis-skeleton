@@ -1,0 +1,49 @@
+# Site Settings
+title: 'Jekyll/TravisCI Project Skeleton'
+
+description: 'A skeleton for Jekyll/TravisCI projects.'
+
+url: ''
+baseurl: '' # the subpath of your site, e.g. /blog
+company: ''
+email: ''
+github_user: ''
+github_url: ''
+
+# Build Settings
+include:
+  - _pages
+
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  # NODE STUFF:
+  #- gulpfile.js
+  #- node_modules
+  #- package.json
+
+gems:
+  - jekyll-assets
+  - octopress-minify-html
+  - jekyll-sitemap
+
+# FrontMatter Settings
+permalink: '/:title/' # clean URL's (xyz.com/title vs xyz.com/title.html)
+
+# Style Settings
+sass:
+  sass_dir: '_dev/scss'
+  style: 'compressed'
+
+# Markdown Settings
+markdown: 'redcarpet'
+redcarpet:
+  extensions:
+    - no_intra_emphasis
+    - tables
+    - autolink
+    - strikethrough
+    - with_toc_data

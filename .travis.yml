@@ -1,0 +1,19 @@
+language: ruby
+rvm:
+- 2.3.0
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+sudo: false
+addons:
+  ssh_known_hosts: 
+before_install:
+  - export TZ=America/Los_Angeles
+  - export JEKYLL_ENV=production
+  - bash _scripts/0_SETUP.sh
+  - bash _scripts/1_install.sh
+script:
+  - bash _scripts/2_build.sh
+  - bash _scripts/3_test.sh
+after_success:
+  - bash _scripts/4_deploy.sh
