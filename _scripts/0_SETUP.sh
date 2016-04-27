@@ -32,6 +32,6 @@ JTS_GML_USE="user"
 # https://docs.travis-ci.com/user/encrypting-files/
 #
 # Update the 1_install.sh file, replacing the '@@@'
-# symbols with the proper hash value.
+# symbols with the proper hash values.
 #
 ####################################################

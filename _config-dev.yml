@@ -1,17 +1,21 @@
 # This is a companion config file for use in the dev environment.
 #
-# It doesn't compress the HTML/CSS, making the generated source easier
+# It doesn't compress the HTML/CSS so compiled source code is easier
 # to navigate.
 #
 # To use, run Jekyll like this:
 #
 # jekyll serve -w --config _config.yml,_config-dev.yml
 #
-# (make it an alias so you don't have to type it all that each time)
+# (protip: make it an alias so you don't have to type it each time)
+
 
 # Build Settings
-gems: ['jekyll-assets', 'jekyll-sitemap']
+gems:
+  - jekyll-assets
+  - jekyll-sitemap
 
 # Style Settings
 sass:
-  style: ''
+  style:
+    - 

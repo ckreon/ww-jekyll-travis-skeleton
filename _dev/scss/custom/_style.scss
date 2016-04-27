@@ -1,2 +1,44 @@
 // Custom Styles
 
+#primary_nav_wrap ul
+{
+	list-style: none;
+}
+
+#primary_nav_wrap ul li
+{
+	position: relative;
+	float: left;
+	margin: 0;
+	padding: 0 .5rem 0 .5rem;
+}
+
+#primary_nav_wrap ul ul
+{
+	opacity: 0;
+	height: 0;
+	position: absolute;
+	top: 100%;
+	left: -.9rem;
+	background: #373a3c;
+	padding: 0;
+	overflow: hidden;
+
+  -webkit-transition: all .1s ease .1s;
+  -moz-transition: all .1s ease .1s;
+  -o-transition: all .1s ease .1s;
+  -ms-transition: all .1s ease .1s;
+  transition: all .1s ease .1s;
+}
+
+#primary_nav_wrap ul ul li
+{
+	float: none;
+	width: 9em;
+}
+
+#primary_nav_wrap ul li:hover > ul
+{
+	opacity: 1;
+	height: auto;
+}

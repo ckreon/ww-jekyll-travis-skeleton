@@ -8,8 +8,10 @@ sudo: false
 addons:
   ssh_known_hosts: 
 before_install:
+  # EXPORTS
   - export TZ=America/Los_Angeles
   - export JEKYLL_ENV=production
+  # SCRIPTS
   - bash _scripts/0_SETUP.sh
   - bash _scripts/1_install.sh
 script:

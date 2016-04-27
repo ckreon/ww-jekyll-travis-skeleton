@@ -10,6 +10,10 @@ email: ''
 github_user: ''
 github_url: ''
 
+# The 'home' link in the navbar is determined by page title -
+# Set this value to the title of your Homepage:
+home_icon_title: 'Home'
+
 # Build Settings
 include:
   - _pages

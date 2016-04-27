@@ -4,7 +4,7 @@
   </a>
   <ul class="nav navbar-nav">
 
-    {% if page.title == 'Home' %}
+    {% if page.title == site.home_icon_title %}
     <li class="nav-item active">
     {% else %}
     <li class="nav-item">
@@ -38,7 +38,6 @@
       </a>
       <ul>
         {% for p in site.pages %}
-          {% if p.nav %}
           {% if p.dropdown %}
             {% if page.url == p.url %}
               <li class="nav-item active">
@@ -49,7 +48,6 @@
                 <a class="nav-link" href="{{ p.url }}">{{ p.title }}</a>
               </li>
             {% endif %}
-          {% endif %}
           {% endif %}
         {% endfor %}
       </ul>
