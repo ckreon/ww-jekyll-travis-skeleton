@@ -7,7 +7,7 @@
 #
 # jekyll serve -w --config _config.yml,_config-dev.yml
 #
-# (protip: make it an alias so you don't have to type it each time)
+# (protip: make it an alias so you don't have to type it)
 
 
 # Build Settings

@@ -1,1 +1,1 @@
-# Jekyll Skeleton for use with Travis CI
+# Jekyll Skeleton for use with TravisCI
