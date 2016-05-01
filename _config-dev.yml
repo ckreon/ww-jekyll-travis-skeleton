@@ -14,8 +14,3 @@
 gems:
   - jekyll-assets
   - jekyll-sitemap
-
-# Style Settings
-sass:
-  style:
-    - 

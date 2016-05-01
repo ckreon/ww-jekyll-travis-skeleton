@@ -10,7 +10,7 @@
 
   <!-- Load CSS for IE 9 and lower -->
   <!--[if IE]>
-  	<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    {% css main %}
   <![endif]-->
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">

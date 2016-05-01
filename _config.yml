@@ -10,9 +10,13 @@ email: ''
 github_user: ''
 github_url: ''
 
-# The 'home' link in the navbar is determined by page title -
-# Set this value to the title of your Homepage:
+# The 'home' link in the navbar is configured here -
+# Set these values to change your Homepage:
+home_url: '/'
 home_icon_title: 'Home'
+
+# FrontMatter Settings
+permalink: '/:title/' # clean URL's (xyz.com/title vs xyz.com/title.html)
 
 # Build Settings
 include:
@@ -34,13 +38,10 @@ gems:
   - octopress-minify-html
   - jekyll-sitemap
 
-# FrontMatter Settings
-permalink: '/:title/' # clean URL's (xyz.com/title vs xyz.com/title.html)
-
-# Style Settings
-sass:
-  sass_dir: '_dev/scss'
-  style: 'compressed'
+# Jekyll-Assets
+assets:
+  sources:
+    - _assets/icons
 
 # Markdown Settings
 markdown: 'redcarpet'
