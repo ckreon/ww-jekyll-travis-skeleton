@@ -8,10 +8,7 @@
 
   <title>{% if page.title %}{{ site.title | append:' - ' | append:page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
 
-  <!-- Load CSS for IE 9 and lower -->
-  <!--[if IE]>
-    {% css main %}
-  <![endif]-->
+  {% css main %}
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 </head>

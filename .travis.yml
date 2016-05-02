@@ -3,14 +3,28 @@ rvm:
 - 2.3.0
 env:
   global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+    # Branch you want to deploy:
+  - JTS_DBRANCH="master"
+    # Server IP:
+  - JTS_SERV_IP="123.123.123.123"
+    # Server deploy path:
+  - JTS_SERV_DP="/var/www/SITE-FOLDER"
+    # Username for Travis deploy:
+  - JTS_TRV_USR="deploy"
+    # Filename of Travis key:
+  - JTS_KEYNAME="jts_deploy_key"
+    # Gmail user (DO NOT ADD '@gmail.com'):
+  - JTS_GML_USE="USER"
+    # Timezone
   - TZ=America/Los_Angeles
+    # Jekyll Variables
   - JEKYLL_ENV=production
+    # For
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 sudo: false
 addons:
-  ssh_known_hosts: 
+  ssh_known_hosts: 123.123.123.123
 before_install:
-  - bash _scripts/0_SETUP.sh
   - bash _scripts/1_install.sh
 script:
   - bash _scripts/2_build.sh
