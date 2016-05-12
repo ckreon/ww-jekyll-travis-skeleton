@@ -4,17 +4,17 @@
 
 // Reset and dependencies
 @import "bootstrap/normalize";
-@import "bootstrap/print";
+//@import "bootstrap/print";
 
 // Core CSS
 @import "bootstrap/reboot";
 @import "bootstrap/type";
-@import "bootstrap/images";
-@import "bootstrap/code";
+//@import "bootstrap/images";
+//@import "bootstrap/code";
 @import "bootstrap/grid";
-@import "bootstrap/tables";
+//@import "bootstrap/tables";
 //@import "bootstrap/forms";
-@import "bootstrap/buttons";
+//@import "bootstrap/buttons";
 
 // Components
 //@import "bootstrap/animation";
@@ -34,7 +34,7 @@
 //@import "bootstrap/progress";
 //@import "bootstrap/media";
 //@import "bootstrap/list-group";
-@import "bootstrap/responsive-embed";
+//@import "bootstrap/responsive-embed";
 //@import "bootstrap/close";
 
 // Components w/ JavaScript
@@ -46,5 +46,5 @@
 // Utility classes
 @import "bootstrap/utilities";
 @import "bootstrap/utilities-background";
-@import "bootstrap/utilities-spacing";
-@import "bootstrap/utilities-responsive";
+//@import "bootstrap/utilities-spacing";
+//@import "bootstrap/utilities-responsive";
