@@ -1,8 +1,8 @@
 # Site Settings
 title: 'Jekyll/TravisCI Project Skeleton'
-
 description: 'A skeleton for Jekyll/TravisCI projects.'
 
+# Site Variables
 url: ''
 baseurl: '' # the subpath of your site, e.g. /blog
 company: ''

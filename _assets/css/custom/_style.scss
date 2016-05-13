@@ -1,20 +1,17 @@
 // Custom Styles
 
-#primary_nav_wrap ul
-{
+#primary_nav_wrap ul {
 	list-style: none;
 }
 
-#primary_nav_wrap ul li
-{
+#primary_nav_wrap ul li {
 	position: relative;
 	float: left;
 	margin: 0;
 	padding: 0 .5rem 0 .5rem;
 }
 
-#primary_nav_wrap ul ul
-{
+#primary_nav_wrap ul ul {
 	opacity: 0;
 	height: 0;
 	position: absolute;
@@ -31,14 +28,12 @@
   transition: all .1s ease .1s;
 }
 
-#primary_nav_wrap ul ul li
-{
+#primary_nav_wrap ul ul li {
 	float: none;
 	width: 9em;
 }
 
-#primary_nav_wrap ul li:hover > ul
-{
+#primary_nav_wrap ul li:hover > ul {
 	opacity: 1;
 	height: auto;
 }
