@@ -18,7 +18,7 @@
 @import "bootstrap/mixins/breakpoints";
 @import "bootstrap/mixins/hover";
 @import "bootstrap/mixins/image";
-@import "bootstrap/mixins/label";
+@import "bootstrap/mixins/tag";
 @import "bootstrap/mixins/reset-filter";
 @import "bootstrap/mixins/resize";
 @import "bootstrap/mixins/screen-reader";
@@ -48,8 +48,7 @@
 
 // // Layout
 @import "bootstrap/mixins/clearfix";
-@import "bootstrap/mixins/center-block";
 // @import "bootstrap/mixins/navbar-align";
 @import "bootstrap/mixins/grid-framework";
 @import "bootstrap/mixins/grid";
-@import "bootstrap/mixins/pulls";
+@import "bootstrap/mixins/float";

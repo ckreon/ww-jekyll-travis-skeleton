@@ -1,3 +1,12 @@
+/*!
+ * Bootstrap v4.0.0-alpha.5 (https://getbootstrap.com)
+ * Copyright 2011-2016 The Bootstrap Authors
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+// CUSTOMIZED FOR JEKYLL-TRAVIS-SKELETON DEFAULT
+
 // Core variables and mixins
 @import "bootstrap_variables";
 @import "bootstrap_mixins";
@@ -27,8 +36,7 @@
 //@import "bootstrap/card";
 //@import "bootstrap/breadcrumb";
 //@import "bootstrap/pagination";
-//@import "bootstrap/pager";
-//@import "bootstrap/labels";
+//@import "bootstrap/tags";
 //@import "bootstrap/jumbotron";
 //@import "bootstrap/alert";
 //@import "bootstrap/progress";
@@ -45,6 +53,3 @@
 
 // Utility classes
 @import "bootstrap/utilities";
-@import "bootstrap/utilities-background";
-//@import "bootstrap/utilities-spacing";
-//@import "bootstrap/utilities-responsive";
