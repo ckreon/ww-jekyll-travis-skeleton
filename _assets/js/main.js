@@ -1,4 +1,6 @@
-//= require _jquery-3.1.1.min
-//= require _tether-1.3.3.min
-//= require _bootstrap-a4.6.min
-//= require _custom
+//= require jQuery/jquery-3.1.1
+//= require Bootstrap/util
+//= require Bootstrap/button
+//= require Bootstrap/collapse
+//= require Bootstrap/dropdown
+//= require custom
