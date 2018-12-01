@@ -1,52 +1,61 @@
-<nav class="navbar fixed-top navbar-toggleable-sm navbar-inverse bg-inverse" role="navigation">
-	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle Navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-	<a class="navbar-brand" href="{{ site.baseurl }}/">
-		{{ site.title }}
-	</a>
-	<div id="navCollapse" class="collapse navbar-collapse justify-content-end">
-		<ul class="navbar-nav ml-auto">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
 
-			{% for p in site.pages %}
+  <a class="navbar-brand" href="{{ site.baseurl }}/">
+   {{ site.title }}
+ 	</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+
+    	{% for p in site.pages %}
 				{% if p.nav %}
 					{% if page.url == p.url %}
-						<li class="nav-item active">
-					{% else %}
+      			<li class="nav-item active">
+      		{% else %}
 						<li class="nav-item">
 					{% endif %}
-						<a class="nav-link" href="{{ p.url }}">{{ p.title }}</a>
-					</li>
-				{% endif %}
-			{% endfor %}
+        		<a class="nav-link" href="{{ p.url }}">{{ p.title }}</a>
+      		</li>
+      	{% endif %}
+      {% endfor %}
 
-			{% if page.dropdown %}
-				<li class="nav-item dropdown active">
-			{% else %}
-				<li class="nav-item dropdown">
-			{% endif %}
-				<a href="#" id="navDropdownLink" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-					Dropdown
-				</a>
-				<div class="dropdown-menu inverse-dropdown" aria-labelledb="navDropdownLink">
-					{% for p in site.pages %}
+      {% if page.dropdown %}
+      	<li class="nav-item dropdown active">
+      {% else %}
+      	<li class="nav-item dropdown">
+      {% endif %}
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        	Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+
+        	{% for p in site.pages %}
 						{% if p.dropdown %}
 							{% if page.url == p.url %}
-						  	<a href="{{ p.url }}" class="nav-link dropdown-item active">
-						  		{{ p.title }}
-						  	</a>
-							{% else %}
-						  	<a href="{{ p.url }}" class="nav-link dropdown-item">
-						  		{{ p.title }}
-						  	</a>
-					  	{% endif %}
+          			<a class="dropdown-item active" href="{{ p.url }}">
+          				{{ p.title }}
+          			</a>
+          		{% else %}
+								<a class="dropdown-item" href="{{ p.url }}">
+									{{ p.title }}
+								</a>
+							{% endif %}
 						{% endif %}
 					{% endfor %}
-				</div>
-			</li>
 
-		</ul>
-		
-	</div>
+        </div>
+
+      </li>
+    </ul>
+
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+
+  </div>
 
 </nav>

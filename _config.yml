@@ -1,14 +1,14 @@
 # Site Settings
-title: 'Jekyll/TravisCI Project Skeleton'
-description: 'A skeleton for Jekyll/TravisCI projects.'
+title: 'OpenVote'
+description: 'A fully transparent voting system.'
 
 # Site Variables
 url: ''
 baseurl: '' # the subpath of your site, e.g. /blog
-company: ''
-email: ''
+company: 'OpenVote'
+email: 'ckreon@gmail.com'
 github_user: ''
-github_url: ''
+github_url: 'https://github.com/ckreon/ww-openvote'
 
 # The 'home' link in the navbar is configured here -
 # Set these values to change your Homepage:
@@ -33,7 +33,7 @@ exclude:
   #- node_modules
   #- package.json
 
-gems:
+plugins:
   - jekyll-assets
   - octopress-minify-html
   - jekyll-sitemap

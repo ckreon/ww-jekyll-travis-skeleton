@@ -11,7 +11,7 @@
 
 
 # Build Settings
-gems:
+plugins:
   - jekyll-assets
   - jekyll-sitemap
 

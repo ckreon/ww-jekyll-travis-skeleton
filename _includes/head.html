@@ -8,7 +8,7 @@
 
   <title>{% if page.title %}{{ site.title | append:' - ' | append:page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
 
-  {% css main %}
+  {% asset main.css %}
 
 	{% include favicon.html %}
 
